@@ -1,26 +1,26 @@
-# Word-Guesse
+# Python Mini Games
 
-A simple terminal-based guessing game in Python. The computer generates a random
-5-letter string, and you have 14 tries to guess it, with correctly placed letters
-revealed after each attempt.
+Small terminal games written in Python, originally school projects.
 
-## About
-Built as a school project to practice loops, string manipulation, and basic
-game-state tracking.
+## Games
+
+### Word Guess (`word_guess.py`)
+The computer generates a random 5-letter string and you have 14 tries to guess
+it. Correctly placed letters are revealed after each attempt.
+
+### Number Guess (`number_guess.py`)
+The computer picks a random 2-digit number (10-99) and you have 10 tries to find
+it, with "higher" / "lower" hints after each guess. The interface is in French.
 
 ## Tech Stack
 - Python (standard library only: `random`)
 
-## How it works
-1. A random 5-letter string is generated from uppercase letters
-2. Each turn, you guess the full string (input is case-insensitive)
-3. Correctly placed letters are revealed in a mask (e.g. `*A**O`)
-4. You win by guessing it exactly, or lose after 14 tries
-
-## Customizing
-Change `WORD_LENGTH` and `MAX_TRIES` at the top of the file to make the game
-easier or harder.
+## Run
+```
+python word_guess.py
+python number_guess.py
+```
 
 ## Status
-Old school project. Later cleaned up: removed an answer leak, fixed the display
-order, and handled short or lowercase guesses.
+Old school projects, cleaned up later (fixed an answer leak and display-order
+bug in Word Guess, added input validation to Number Guess).
